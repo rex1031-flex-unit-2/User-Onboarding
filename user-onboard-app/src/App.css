@@ -1,0 +1,19 @@
+.App {
+  text-align: center;
+}
+
+form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 25px;
+}
+
+label{
+  margin: 10px;
+}
+
+button{
+  display: block;
+  width: 100px;
+}
