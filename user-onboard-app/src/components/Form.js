@@ -90,6 +90,7 @@ export default function Form() {
                 <input
                     type='text'
                     name='name'
+                    data-cy='name'
                     value={formState.name}
                     onChange={inputChange}
                 />
@@ -100,6 +101,7 @@ export default function Form() {
                 <input 
                     type='email'
                     name='email'
+                    data-cy='email'
                     value={formState.email}
                     onChange={inputChange}
                 />
@@ -110,6 +112,7 @@ export default function Form() {
                 <input 
                     type='password'
                     name='password'
+                    data-cy='password'
                     value={formState.password}
                     onChange={inputChange}
                 />
@@ -120,12 +123,13 @@ export default function Form() {
                 <input 
                     type='checkbox'
                     name='terms'
+                    data-cy='terms'
                     checked={formState.terms}
                     onChange={inputChange}
                 />
             </label>
 
-            <button disabled={isButtonDisabled} type='submit'>Submit</button>
+            <button data-cy='submit' disabled={isButtonDisabled} type='submit'>Submit</button>
             <pre>{JSON.stringify(post, null, 2)}</pre>
         </form>
     )
